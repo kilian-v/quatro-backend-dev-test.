@@ -34,9 +34,9 @@ pip install -r requirements.txt
 After you need to do migrations and create a superuser
 
 ```
- * python manage.py makemigrations
- * python manage.py migrate
- * python manage.py createsuperuser
+ python manage.py makemigrations
+ python manage.py migrate
+ python manage.py createsuperuser
 ```
 
 To finish you will need Geodjango. Please folow these link
@@ -56,8 +56,8 @@ Details
 ```
 This is an project with an app api using to build an API with the Django Rest Framework. The endpoints of this API are:
 
-# `/register/`: This endpoint receives `{name, username, password}` and creates an account from the information given.
-# `/login/`: This endpoint receives `{username, password}` and responds with an access token that a client can use to authenticate themselves for subsequent calls.
-# `/api_keys/` [login required]: A `GET` endpoint that responds with the current user's API Keys. Note that these keys (public and secret) are generated when a user creates an account.
-# `/restaurants/` [API key pair required]: A `POST` endpoint that given `{lat, lng}` returns the list of restaurants in a 3km radius of those coordinates. Note that this endpoint is only accessible with a valid API key pair specified in the header with `X-Public-Key` and `X-Secret-Key` for the public and secret key respectively.
+"/register/": This endpoint receives `{name, username, password}` and creates an account from the information given.
+"/login/": This endpoint receives `{username, password}` and responds with an access token that a client can use to authenticate themselves for subsequent calls.
+"/api_keys/" [login required]: A `GET` endpoint that responds with the current user's API Keys. Note that these keys (public and secret) are generated when a user creates an account.
+"/restaurants/" [API key pair required]: A `POST` endpoint that given `{lat, lng}` returns the list of restaurants in a 3km radius of those coordinates. Note that this endpoint is only accessible with a valid API key pair specified in the header with `X-Public-Key` and `X-Secret-Key` for the public and secret key respectively.
 ```
