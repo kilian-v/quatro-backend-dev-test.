@@ -39,6 +39,12 @@ After you need to do migrations and create a superuser
  * python manage.py createsuperuser
 ```
 
+To finish you will need Geodjango. Please folow these link
+
+```
+https://docs.djangoproject.com/en/3.1/ref/contrib/gis/install/
+```
+
 Now you can run the project with this command
 
 ```
