@@ -4,7 +4,9 @@ from django.conf import settings
 from django.contrib.auth.models import (
     AbstractBaseUser, BaseUserManager, PermissionsMixin
 )
-from django.db import models
+from django.contrib.gis.db import models
+from django.contrib.gis.geos import Point
+from django.db.models import Manager as GeoManager
 
 
 class UserManager(BaseUserManager):
@@ -69,3 +71,10 @@ class User(AbstractBaseUser, PermissionsMixin):
         }, settings.SECRET_KEY, algorithm='HS256')
 
         return token.decode('utf-8')
+
+
+class Place(models.Model):
+    name = models.CharField(max_length=100)
+    type = models.CharField(max_length=50)
+    location = models.PointField(null=True, blank=True)
+    objects = GeoManager()
