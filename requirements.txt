@@ -41,7 +41,7 @@ packaging==20.4
 parso==0.7.1
 patch-ng==1.17.4
 pep8==1.7.1
-Pillow==6.2.2
+Pillow==7.1.0
 pipenv==2020.8.13
 pluggy==0.13.1
 pluginbase==1.0.0
