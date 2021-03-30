@@ -49,7 +49,7 @@ psycopg2==2.8.6
 pycodestyle==2.5.0
 pycparser==2.20
 pyflakes==2.2.0
-Pygments==2.7.1
+Pygments==2.7.4
 PyJWT==1.7.1
 pyparsing==2.4.7
 PyQt5==5.15.1
